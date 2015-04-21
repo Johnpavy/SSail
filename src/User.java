@@ -14,6 +14,13 @@ public class User {
     String password;
     String login;
     
+    void User(String f, String ln, String p, String l){
+        this.fName = f;
+        this.lName = ln;
+        this.password = p;
+        
+    }
+    
     void setFName(String f) {
         this.fName = f;
     }
@@ -21,5 +28,38 @@ public class User {
     String getFName(){
         return this.fName;
     }
+    
+    void setLName(String ln){
+        this.lName = ln;
+    }
+    
+    String getLname(){
+        return this.lName;
+    }
+    
+    void setPassword(String p){
+        this.password = p;
+    }
+    
+    String getPassword(){
+        return this.password;
+    }
+    
+    boolean infoCheck(String p, String l){
+        if(p.equals(password) && l.equals(login)){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    void setLogin(String l){
+        this.login = l;
+    }
+    
+    String getLogin(){
+        return this.login;
+    }
+    
     
 }
