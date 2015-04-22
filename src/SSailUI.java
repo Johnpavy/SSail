@@ -145,10 +145,10 @@ public class SSailUI extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
             try{
-            String host = "jdbc:sqlserver://localhost:1433"; 
-            String uName = "sa";
+            String host = "jdbc:derby://localhost:1527/SchoolDB"; 
+            String uName = "johnpavelchak";
             String uPass = "5rdx%RDX";
-            Connection con = DriverManager.getConnection(host, uName, uPass );
+           Connection con = DriverManager.getConnection(host, uName, uPass );
             }
             catch(SQLException err){
                 System.out.println(err.getMessage());
