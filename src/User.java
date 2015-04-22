@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 
 /**
  *
@@ -11,10 +7,13 @@
 public class User {
     String fName;
     String lName;
-    String password;
+    char[] password;
     String login;
+
     
-    void User(String f, String ln, String p, String l){
+    
+    
+    User(String f, String ln, char p[], String l){
         this.fName = f;
         this.lName = ln;
         this.password = p;
@@ -37,15 +36,15 @@ public class User {
         return this.lName;
     }
     
-    void setPassword(String p){
+    void setPassword(char[] p){
         this.password = p;
     }
     
-    String getPassword(){
+    char[] getPassword(){
         return this.password;
     }
     
-    boolean infoCheck(String p, String l){
+    boolean infoCheck(char[] p, String l){
         if(p.equals(password) && l.equals(login)){
             return true;
         }
