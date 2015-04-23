@@ -9,7 +9,7 @@ public class SSailUI extends javax.swing.JFrame {
     char[] password;
     String login;
     boolean correctInfo = false;
-
+    databaseConnect database = new databaseConnect();
 
     /**
      * Creates new form SSailUI
@@ -144,7 +144,7 @@ public class SSailUI extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-            try{
+            /*try{
             String host = "jdbc:derby://localhost:1527/SchoolDB"; 
             String uName = "johnpavelchak";
             String uPass = "5rdx%RDX";
@@ -152,9 +152,12 @@ public class SSailUI extends javax.swing.JFrame {
             }
             catch(SQLException err){
                 System.out.println(err.getMessage());
-            }
+            }*/
+        
         //</editor-fold>
-
+        databaseConnect database = new databaseConnect();
+        
+        database.createConnection();
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
