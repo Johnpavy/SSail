@@ -164,6 +164,9 @@ public class SSailUI extends javax.swing.JFrame {
                 new SSailUI().setVisible(true);
             }
         });
+        CreateInstructorDatabase instructors = new CreateInstructorDatabase();
+        instructors.openInstructorConnection(database);
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

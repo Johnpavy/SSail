@@ -17,7 +17,7 @@ public class User {
         this.fName = f;
         this.lName = ln;
         this.password = p;
-        
+        this.login = l;
     }
     
     void setFName(String f) {
